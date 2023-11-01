@@ -21,5 +21,12 @@ public class Test {
         lisi.name="";
         lisi.eat();
         System.out.println(lisi.name);
+
+        Person test = new Person(10, "test", 10, 10);
+        System.out.println("调用有参构造器");
+        System.out.println(test.name);
+
+        Person test1 = new Person(10, "test", 10);
+        System.out.println(test1.age);
     }
 }

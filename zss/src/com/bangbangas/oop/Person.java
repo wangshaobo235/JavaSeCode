@@ -21,9 +21,30 @@ public class Person {
     double height;
     double weight;
 
-    //显式声明无参构造器
+
     public Person(){
+        age=10;
+        name="无参构造器";
         System.out.println("调用无参构造器");
+    }
+
+    //显式声明无参构造器
+
+    public Person(int age, String name, double height, double weight) {
+        this.age = age;
+        this.name = name;
+        this.height = height;
+        this.weight = weight;
+    }
+    /*
+    就近原则
+    当形参名字跟属性重名，会出现就近原则
+    规避：this.age=age;this.name=name;this.height=height
+     */
+    public Person(int age, String name, double height) {
+        this.age = age;
+        this.name = name;
+        this.height = height;
     }
 
     public void eat(){
