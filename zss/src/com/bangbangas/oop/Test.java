@@ -10,6 +10,8 @@ package com.bangbangas.oop;
  * @Version 1.0
  */
 public class Test {
+    int id;
+    String name;
     public static void main(String[] args) {
         Person zhangsan = new Person();
         zhangsan.name="";
@@ -28,5 +30,9 @@ public class Test {
 
         Person test1 = new Person(10, "test", 10);
         System.out.println(test1.age);
+
+        Test test2 = new Test();
+
+
     }
 }
