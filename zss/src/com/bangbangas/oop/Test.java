@@ -32,7 +32,5 @@ public class Test {
         System.out.println(test1.age);
 
         Test test2 = new Test();
-
-
     }
 }

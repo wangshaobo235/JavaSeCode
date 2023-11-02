@@ -1,5 +1,7 @@
 package com.bangbangas.oop;
 
+import com.sun.org.apache.bcel.internal.generic.NEW;
+
 public class StudentTest {
     public static void main(String[] args) {
         Student student = new Student();
@@ -15,12 +17,12 @@ public class StudentTest {
         System.out.println(student.getScore());
         System.out.println(student1.getScore());
         System.out.println(student2.getScore());
-        test();
+        new StudentTest().test();
 
 
     }
 
-    public static void test(){
+    public void test(){
         System.out.println("");
     }
 }
