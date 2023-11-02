@@ -14,6 +14,9 @@ public class StudentTest {
         student2.setId(30);
         student2.setScore(40);
 
+        Student haha = new Student(1, "haha", 100, -10);
+        System.out.println(haha.getAge());
+
         System.out.println(student.getScore());
         System.out.println(student1.getScore());
         System.out.println(student2.getScore());

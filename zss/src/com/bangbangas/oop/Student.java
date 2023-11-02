@@ -12,8 +12,8 @@ package com.bangbangas.oop;
 public class Student {
     int id;
     String name;
-
-    int score;
+    static int score;
+    private int age;
 
     public int getId() {
         return id;
@@ -37,5 +37,28 @@ public class Student {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if(age<0||age>100){
+            System.out.println("输入的年龄不符合,赋予默认值18");
+            this.age=18;
+        }else {
+            this.age = age;
+        }
+    }
+
+    public Student(int id, String name, int score, int age) {
+        this.id = id;
+        this.name = name;
+        this.score = score;
+        this.setAge(age);
+    }
+
+    public Student() {
     }
 }
