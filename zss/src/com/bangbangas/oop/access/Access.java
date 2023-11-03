@@ -52,4 +52,12 @@ public class Access {
     public void printInfo(){
         System.out.println(age+id+score+height);
     }
+
+    public static void printInfo(String name){
+        System.out.println(" ");
+    }
+
+    public Access() {
+           printInfo();
+    }
 }
