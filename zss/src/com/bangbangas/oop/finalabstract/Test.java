@@ -11,6 +11,8 @@ package com.bangbangas.oop.finalabstract;
  */
 public class Test {
     public static void main(String[] args) {
+        test test = new test();
+        Interface2 if2 = new test(); //
 
     }
 }

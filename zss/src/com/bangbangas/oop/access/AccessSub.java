@@ -9,8 +9,11 @@ package com.bangbangas.oop.access;
  * @Create 2023/11/2 15:51
  * @Version 1.0
  */
-public class AccessSub extends Access{
-    public void printi(){
-        System.out.println(height+score+age);
+public class AccessSub extends Access {
+    @Override
+    public void printInfo() {
+
+        System.out.println(height + score + age
+        );
     }
 }

@@ -1,7 +1,5 @@
 package com.bangbangas.oop;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 /**
  * ClassName: Person
  * Package: com.bangbangas.oop
@@ -22,9 +20,9 @@ public class Person {
     double weight;
 
 
-    public Person(){
-        age=10;
-        name="无参构造器";
+    public Person() {
+        age = 10;
+        name = "无参构造器";
         System.out.println("调用无参构造器");
     }
 
@@ -36,6 +34,7 @@ public class Person {
         this.height = height;
         this.weight = weight;
     }
+
     /*
     就近原则
     当形参名字跟属性重名，会出现就近原则
@@ -47,20 +46,20 @@ public class Person {
         this.height = height;
     }
 
-    public void eat(){
-        int num ;
+    public void eat() {
+        int num;
         {
             int num1;
         }
         System.out.println("我喜欢吃饭");
     }
 
-    public void sleep(String adderss){
-        System.out.println("我在"+adderss+"睡觉");
+    public void sleep(String adderss) {
+        System.out.println("我在" + adderss + "睡觉");
     }
 
-    public void introduce(){
-        System.out.println("我叫"+name+"睡觉"+name+height+weight);
+    public void introduce() {
+        System.out.println("我叫" + name + "睡觉" + name + height + weight);
     }
 
 }

@@ -1,7 +1,5 @@
 package com.bangbangas.oop.finalabstract;
 
-import java.time.DayOfWeek;
-
 /**
  * ClassName: Interface
  * Package: com.bangbangas.oop.finalabstract
@@ -36,6 +34,14 @@ interface Interface2 {
     public static final int age = 10;
     public abstract void say();
     public abstract int eat(String test); // 修饰符可以省略不写 自动变灰
+
+    public default void saydefault(){
+        System.out.println("saydefault");
+    };
+
+    public static void saysatatic(){
+        System.out.println("saydtatic");
+    }
 }
 
 class test extends AbstractSub implements Interface,Interface2{
@@ -49,4 +55,12 @@ class test extends AbstractSub implements Interface,Interface2{
         return 0;
     }
 
+    @Override
+    public void saydefault() {
+        System.out.println("接口中要是想实现default方法，defautl必须去掉");
+    }
+    /*
+    saystatic static 方法不能重写
+
+     */
 }
