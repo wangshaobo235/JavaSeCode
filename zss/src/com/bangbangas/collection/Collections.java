@@ -1,9 +1,6 @@
 package com.bangbangas.collection;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
 
 public class Collections {
     public static void main(String[] args) {
@@ -33,14 +30,26 @@ public class Collections {
         }
 
  */
-
         for(Object o:integers){
             System.out.println(o);
         }
-
         Iterator iterator = integers.iterator();
         while(iterator.hasNext()){
             System.out.println(iterator.next());
+        }
+
+        List list = Arrays.asList(new Integer[]{12, 23, 4, 5});
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
+        for (Object o : list) {
+            System.out.println(o);
+        }
+
+        Iterator iterator1 = list.iterator();
+        while(iterator1.hasNext()){
+            System.out.println(iterator1.next());
         }
 
 
