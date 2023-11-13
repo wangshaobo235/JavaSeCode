@@ -16,7 +16,8 @@ public class Generics {
     public static void main(String[] args) {
         /*
         如果不使用泛型，存入的数据类型比较乱，什么引入类型都可以存入集合中
-        假如泛型的优点：在加入数据就进行校验，不是该泛型就会报错
+        加入泛型的优点：在加入数据的时候就进行校验，不是该泛型就会报错，添加不进去
+                     遍历的时候不需要指定为object,指定为泛型即可
         在遍历的过程中，不需要强指定为object类型，指定为泛型即可
         出现在1.5之后
         <参数类型>：参数类型具体在使用的时候才会确定具体类型
@@ -25,7 +26,7 @@ public class Generics {
         1.7之后：ArrayList<Integer> list =  new ArrayList();
          */
 
-        ArrayList<Integer> list =  new ArrayList();
+        ArrayList<Integer> list =  new ArrayList<Integer>();
         list.add(12);
         list.add(29);
         list.add(30);

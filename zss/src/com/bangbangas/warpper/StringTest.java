@@ -41,8 +41,19 @@ public class StringTest {
         String data2="ABcdEd";
         StringBuilder stringBuilder1 = new StringBuilder(data2);
         System.out.println(stringBuilder1.reverse().toString().toLowerCase());
-
+        // 创建stringbuilder对象
         StringBuilder stringBuilder = new StringBuilder();
+        StringBuffer stringBuffer = new StringBuffer();
+
+
+        System.out.println("-----------------");
+        String t1 = "a"+"b"+"c";
+        String t2 = "ab"+"c";
+        String t3 = "a"+"bc";
+        String t4 = "abc";
+
+        System.out.println(t1==t2);
+        System.out.println(t2==t3);
 
 
     }

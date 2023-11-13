@@ -24,12 +24,6 @@ public class Collections {
         System.out.println(objects.equals(integers));
         System.out.println(objects == integers);
 
-/*
-        for (int i = 0; i < integers.size(); i++) {
-            System.out.println(integ);
-        }
-
- */
         for(Object o:integers){
             System.out.println(o);
         }
