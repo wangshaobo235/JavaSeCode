@@ -1,9 +1,7 @@
 package com.bangbangas.collectionnew;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Vector;
 
 /**
  * ClassName: ListExecrise
@@ -52,6 +50,19 @@ public class ListExecrise {
         List.add(null);
         List.add(null);
         List.add(null);
+
+        /*
+        无参构造器
+        1.new arraylist()
+        空的object的数组
+        2.add(E)
+        生成长度为10的数组
+        3.当长度超过10个元素的时候
+        数组扩容至10+10/2=15个长度
+
+        如果使用的是指定大小的构造器，则初始elementdata容量为指定大小，如果需要扩容，则直接扩容elementdata的1.5倍
+         */
+
 
     }
 }
