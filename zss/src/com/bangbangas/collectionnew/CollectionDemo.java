@@ -58,7 +58,7 @@ public class CollectionDemo {
     }
 }
 
-class Book{
+class Book implements Comparable<Book> {
     private String name;
     private String author;
     private double price;
@@ -101,5 +101,34 @@ class Book{
                 ", price=" + price +
                 '}';
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Book book = (Book) o;
+
+        if (Double.compare(book.price, price) != 0) return false;
+        if (!name.equals(book.name)) return false;
+        return author.equals(book.author);
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name.hashCode();
+        result = 31 * result + author.hashCode();
+        temp = Double.doubleToLongBits(price);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        // return this.getName().compareTo(o.getName());
+        return ((Double)this.getPrice()).compareTo(o.getPrice());
     }
 }
